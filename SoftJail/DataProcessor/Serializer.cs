@@ -30,7 +30,7 @@
                         .Sum(x => x.Officer.Salary)
                         .ToString("F2")
                 })
-                .OrderBy(x => x.TotalOfficerSalary)
+                .OrderBy(x => x.Name)
                 .ThenBy(x => x.Id)
                 .ToList();
 
